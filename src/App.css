@@ -1,0 +1,253 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap');
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background: #f6f9ff;
+}
+
+header{
+  height: 72px;
+  background-color:#023535;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  transition: all 0.5s;
+    z-index: 997;
+    height: 60px;
+    box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+    background-color: #fff;
+    padding-left: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+header span{
+  color: #132738;
+  font-weight: 600;
+}
+.navlinks{
+  display: flex;
+  flex-direction: row;
+  grid-gap: 2rem;
+  list-style: none;
+}
+
+.navlinks a{
+  color: #132738;
+  text-decoration: none;
+}
+
+.batchlist{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap:1rem;
+  list-style: none;
+  margin-top: 60px;
+}
+
+
+.batch{
+  background-color: #12cbc8;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 4/3;
+  font-size: 16px;
+  border : 2px solid #033b3d;
+  cursor: pointer;
+}
+
+main{
+  width:100%;
+  padding: 4rem 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.recording-date{
+  list-style: none;
+}
+.tags-group{
+  display: flex;
+  flex-direction: row;
+  grid-gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tags{
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #12cbc8;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.recording-day{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width:48px;
+  height: 48px;
+  background-color: #033b3d;
+  color: white;
+
+}
+
+.recording-list{
+  list-style: none;
+}
+
+.recording-date{
+  font-size: 18px;
+}
+
+.recording{
+  display: grid;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+  padding: 1rem;
+    border-radius: 10px;
+    font-size: 14px;
+    margin: 15px 0px;
+    grid-template-columns: 70px 1fr 140px;
+}
+.watch-contain{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem;
+ align-items: center;
+}
+
+.watch{
+    background-color: #033b3d;
+    color: white;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+.dashboard .card-title{
+    padding: 20px 0 15px 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #012970;
+}
+.card-title span {
+  color: #899bbd;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.card-body{
+  border-radius: 5px;
+    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+    padding: 0 20px 20px 20px;
+}
+ .card-body h6 {
+  font-size: 28px;
+  color: #012970;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.text-success {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-success-rgb),var(--bs-text-opacity))!important;
+}
+
+.text-muted {
+  --bs-text-opacity: 1;
+  color: var(--bs-secondary-color)!important;
+}
+
+.statistics{
+  display: flex;
+  grid-gap: 10px;
+  flex-wrap: wrap;
+}
+
+.d-flex{
+  display: flex;
+}
+
+ .card-icon {
+  color: #394509;
+    background: #dadae6;
+}
+.card-icon .material-icons {
+  font-size: 40px;
+  line-height: 0;
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  top: 30px;
+  position: relative;
+  left: 11px;
+}
+
+.rounded-circle {
+    border-radius: 50%!important;
+}
+.ps-3 {
+  padding-left: 1rem!important;
+}
+
+@media (min-width: 1400px){
+.col-am-4 {
+    flex: 0 0 auto;
+    width: 32.33333333%;
+}
+}
+
+.employeelist{
+  padding-top: 120px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.employeelist li{
+  margin: 5px 0px;
+  list-style: none;
+}
+.employeelist li:nth-child(even){
+  background-color: #c9cdd4;
+}
+.employeelist li:nth-child(odd){
+  background-color: #b1b4b9;
+}
+
+.employeelist li a{
+  text-decoration: none;
+}
+
+.main-continer{
+  padding-top: 120px;
+    width: 1200px;
+    margin: 0 auto;
+}

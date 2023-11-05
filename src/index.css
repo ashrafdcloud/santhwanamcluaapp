@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.studentform {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 90px;
+}
+
+.student-table {
+  font-size: 14px;
+  margin-top: 60px;
+}
+
+.student-table li {
+  background-color: #efefef;
+  padding: 12px 24px;
+  margin: 10px 0px;
+  border-radius: 5px;
+}
+
+.studentlist {
+  display: flex;
+  justify-content: space-around;
+}
+
+.button-style{
+  padding: 10px 15px;
+    background-color: #0aad7d;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+.form-class-main{
+    display: flex;
+    gap: 30px;
+    margin-top: 60px;
+    padding: 30px 20px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f3f4f4;
+}
+
+.form-class-main input{
+  padding: 5px 10px;
+}
+
+.btn-submit-style{
+  background-color: #1d3830;
+    color: white;
+    padding: 7px 11px;
+    border: 0px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#customers {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
